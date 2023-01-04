@@ -6,7 +6,7 @@ LogLink is not affiliated with Logseq. It is a community project.
 
 ## Demo
 
-VIDEO
+![type:video](./img/LogLink_demo.mp4)
 
 ## Supported mobile apps
 
