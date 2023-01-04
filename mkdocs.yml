@@ -12,6 +12,8 @@ theme:
     - navigation.sections
     - content.code.copy
 
+plugins:
+    - mkdocs-video
 
 markdown_extensions:
   - attr_list
