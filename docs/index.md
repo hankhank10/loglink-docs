@@ -4,7 +4,7 @@ LogLink allows you to quickly and easily send text, images, videos and locations
 
 ## LogLink demo
 
-VIDEO
+https://user-images.githubusercontent.com/25515609/210651451-6d0c3122-8049-41ce-b962-43e4630bc0e6.mp4
 
 
 ## Introduction to LogSeq
