@@ -8,11 +8,19 @@ Telegram is the preferred client to use for LogLink. It has a slick bot interfac
 
     Before you do anything you should read and understand the important [security notice](/security-notice) - LogLink is not suitable for everyone!
 
-## Step 2: Download Telegram and create an account
+## Step 2: Get a beta code
+
+LogLink is currently in a closed testing phase and as such you won't be able to sign up without a beta code.
+
+If you are interested in supporting the project by acting as an alpha tester, then please sign below.
+
+[Sign up for beta](https://form.jotform.com/230035811319043){ .md-button }
+
+## Step 3: Download Telegram and create an account
 
 [Download Telegram](https://telegram.org/apps) and install it on your phone.
 
-## Step 3: Find the LogLink bot
+## Step 4: Find the LogLink bot
 
 [Click here to message the bot :fontawesome-brands-telegram:](https://t.me/loglink_bot){ .md-button }
 
@@ -20,14 +28,19 @@ or open Telegram and search for the LogLink bot:
 
 ![](./img/telegram/search_for_bot.png){ width=300 }
 
+## Step 4: Start the bot with your beta code
 
-[https://t.me/loglink_bot]
+Message the bot with the following command:
 
-## Step 4: Get the token
+```
+/start yourbetacode
+```
 
-Click the "Start" button to start the bot.
+(obviously replacing `yourbetacode` with the code you were sent when you were invited to the beta)
 
-You will receive a token from the bot, which will look something like `telegram11223344aabbccddee11`.
+## Step 5: Get the token
+
+Assuming the beta code is recognised, you will receive a token from the bot, which will look something like `telegram11223344aabbccddee11`.
 
 !!! danger "Your token is secret"
 

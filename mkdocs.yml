@@ -27,17 +27,20 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 nav:
     - 'index.md'
     - 'security-notice.md'
     - 'Quickstart Guides':
         - 'telegram-quickstart.md'
-        - 'whatsapp-quickstart.md'
         - 'setup-plugin.md'
+        - 'image-upload.md'
     - 'Self Deployment Guide':
         - 'Tech stack intro': 'technologies-used.md'
         - 'self-deploy.md'
-    - 'Contributing':
+    - 'Development':
       - 'How to contribute': 'technologies-used.md'
+      - 'Development roadmap': 'roadmap.md'
+      - 'Changelogs': 'changelog.md'

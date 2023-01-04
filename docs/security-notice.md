@@ -4,7 +4,7 @@ An important premise of LogSeq is that it is privacy-first and can be run entire
 
 Sending data to your graph from mobile apps is a great way to quickly capture ideas and thoughts, but it also means that your data is being sent via multiple third-party services, including Telegram and WhatsApp, but also including LogLink itself.
 
-For images and video, the file is also sent to Imgur which is publicly available.
+For images and video, the file is also sent to imgbb which may publicly available.
 
 While LogLink does not seek to collect any more data on you than is necessary (and seeks to be transparent about this by publishing its source code), using a third party services does come with inherent risks.
 

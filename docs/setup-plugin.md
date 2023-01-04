@@ -1,4 +1,4 @@
-# Download and configure the plugin
+# Download and configure plugin
 
 ## Download methods
 
