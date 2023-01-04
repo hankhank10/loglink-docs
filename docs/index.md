@@ -20,8 +20,8 @@ You can [download LogSeq here](https://logseq.com/).
 
 LogLink currently supports:
 
-- :simple-telegram: Telegram
-- :simple-whatsapp: Whatsapp
+- :simple-telegram: Telegram (preferred)
+- :simple-whatsapp: Whatsapp (less preferred, as has costs)
 
 Future plans:
 
