@@ -39,7 +39,7 @@ You can copy this token by pressing and holding on the message.
 
 ![](./img/telegram/get_token.png){ width=300 }
 
-## Step 5: Download and configure the LogLink plugin LogLink
+## Step 5: Download and configure the LogLink plugin
 
 [Download and configure the LogLink plugin](/plugin-settings)
 
