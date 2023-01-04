@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: LogLink documentation
+
+repo_url: https://github.com/hankhank10/loglink-server
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - content.code.copy
+
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+
+nav:
+    - 'index.md'
+    - 'security-notice.md'
+    - 'Quickstart Guides':
+        - 'telegram-quickstart.md'
+        - 'whatsapp-quickstart.md'
+        - 'setup-plugin.md'
+    - 'Self Deployment Guide':
+        - 'Tech stack intro': 'technologies-used.md'
+        - 'self-deploy.md'
+    - 'Contributing':
+      - 'How to contribute': 'technologies-used.md'
