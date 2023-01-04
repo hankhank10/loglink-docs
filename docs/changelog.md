@@ -12,6 +12,6 @@ For a cloud service, it doesn't really make sense to have version numbers, so ch
 
 ## Plugin
 
-### v0.0.1 (4 January 2023)
+### v0.1.0 (4 January 2023) [link](https://github.com/hankhank10/loglink-plugin/releases/tag/v0.1.0)
 
-- Initial release, available only via Github download and manual unpack
+- Initial release, available only via Github download and requires manual unpack
