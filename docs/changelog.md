@@ -8,6 +8,7 @@ This lists the changes in the various releases to the server and the plugin. For
 
 ### 5 January 2023
 - Better image for test uploads to imgbb, fixing [this issue](https://github.com/hankhank10/loglink-server/issues/17)
+- Fixes format of help message, fixing [this issue](https://github.com/hankhank10/loglink-server/issues/20)
 
 ### 4 January 2023
 
