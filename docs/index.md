@@ -24,9 +24,5 @@ See our full [roadmap](/roadmap) for more details.
 
 ## Getting started
 
-!!! danger "Danger zone"
-
-    Before you do anything you should read and understand the important [security notice](security-notice) - LogLink is not suitable for everyone!
-
 [Telegram quickstart guide :fontawesome-brands-telegram:](telegram-quickstart){ .md-button }
 
