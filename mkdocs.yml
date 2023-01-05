@@ -11,9 +11,11 @@ theme:
     - navigation.tracking
     - navigation.sections
     - content.code.copy
+    - navigation.footer
 
 plugins:
     - mkdocs-video
+    - search
 
 markdown_extensions:
   - attr_list
