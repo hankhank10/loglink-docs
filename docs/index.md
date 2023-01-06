@@ -4,7 +4,7 @@ LogLink allows you to quickly and easily send text, images and locations from mo
 
 ## Demo
 
-![type:video](./img/LogLink_demo_v2.mp4)
+![type:video](./img/LogLink_demo_v3.mp4)
 
 ## Supported mobile apps
 
