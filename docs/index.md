@@ -4,19 +4,13 @@ LogLink allows you to quickly and easily send text, images and locations from mo
 
 ## Demo
 
-![type:video](./img/LogLink_demo.mp4)
-
-## Introduction to Logseq
-
-Logseq is a free and open-source knowledge graph tool that helps you organize your notes, thoughts, and ideas. It's a great way to keep track of your research, projects, and personal life. You can [download LogSeq here](https://logseq.com/).
-
-LogLink is not affiliated with Logseq. It is a community project.
+![type:video](./img/LogLink_demo_v2.mp4)
 
 ## Supported mobile apps
 
 LogLink currently supports:
 
-- :simple-telegram: Telegram (preferred)
+- :simple-telegram: Telegram (beta)
 
 Future plans:
 
