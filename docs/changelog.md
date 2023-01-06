@@ -7,7 +7,8 @@ This lists the changes in the various releases to the server and the plugin. For
 [:material-github: Github link](https://github.com/hankhank10/logseq-server)
 
 ### 6 January 2023
-# 📝Improved demo video
+- 📝Improve demo video
+- 🐛Fixes issue around Telegram handler raising an error when it received an update that wasn't a message, fixing [this issue](https://github.com/hankhank10/loglink-server/issues/22)
 
 ### 5 January 2023
 - 💄Better image for test uploads to imgbb, fixing [this issue](https://github.com/hankhank10/loglink-server/issues/17)
