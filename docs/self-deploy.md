@@ -1,8 +1,8 @@
 # Self deployment
 
-As explained in the [important security notice](/security-notice) sending messages through a service you do not control comes with inherent security risks. You can mitigate these risks by running your own server.
+As explained in the [important security notice](/security-notice), sending messages through a service you do not control comes with inherent security risks. You can mitigate these risks by running your own server.
 
-This guide explains how to deploy the code to your own server. Note that while this is doable, it does require some knowledge of Python and you will also have to learn how to set up Telegram/WhatsApp bot (which is not covered in this guide).
+This guide explains how to deploy the code to your own server. Note that while this is doable, it does require knowledge of how to run your own server and some knowledge of Python. You will also have to learn how to set up Telegram/WhatsApp bot (which is not covered in this guide).
 
 ## What you will need
 
@@ -14,9 +14,9 @@ The server at [https://loglink.it](https://loglink.it/) runs on a Debian VPS, ho
 
     The server doesn't work well without constant internet access, so running it on a laptop or other machine which isn't constantly connected is a bad idea.
 
-The code is not demanding to run so it should run happily on a Raspberry Pi or a low spec VPS. If you are looking for a low cost VPS then I use [hosthorld.uk](https://hostworld.uk/) but have also had good experiences with [DigitalOcean](https://www.digitalocean.com/solutions/vps-hosting).
+The code is not demanding to run so it should run happily on a Raspberry Pi or a low spec VPS. If you are looking for a low cost VPS then I use [hostworld.uk](https://hostworld.uk/) but have also had good experiences with [DigitalOcean](https://www.digitalocean.com/solutions/vps-hosting).
 
-One important thing to note is that this will not deploy easily to service like Heroku. The database technology used is SQLite, which is robust and powerful but stores the data in a file. Services like Heroku use a ["emphemeral file system"](https://devcenter.heroku.com/articles/sqlite3) which means that the files are deleted and reloaded from their source on a periodic basis. This means that your database will be wiped at least 24 hours, which is not a good experience. If you do want to deploy to Heroku then you will need to modify the code to use an external MySQL or Postgres database server.
+One important thing to note is that this will **not** deploy easily to service like Heroku. The database technology used is SQLite, which is robust and powerful but stores the data in a file. Services like Heroku use an ["emphemeral file system"](https://devcenter.heroku.com/articles/sqlite3) which means that the files are deleted and reloaded from their source on a periodic basis. This means that your database will be wiped at least 24 hours, which is not a good experience. If you do want to deploy to Heroku then you will need to modify the code to use an external MySQL or Postgres database server.
 
 ### A registered domain
 
@@ -37,7 +37,7 @@ If you don't have that already then [this DigitalOcean guide](https://www.digita
 Clone the server repo to your local machine:
 
 ```bash
-git clone
+git clone https://github.com/hankhank10/loglink-server.git
 ```
 
 ### Install the required Python packages
@@ -184,7 +184,13 @@ python3 app.py
 
 ### Deploy
 
-Once you are happy your server is functioning as intended you can deploy it to a production server. You can do this by following the [Flask deployment guide](https://flask.palletsprojects.com/en/1.1.x/deploying/).
+Once you are happy your server is functioning as intended you can deploy it to a production server.
+
+A really good guide to doing this is at [this tutorial in DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-22-04) although the same method will work regardless of where you are deploying it.
+
+As mentioned above, Telegram won't work without a SSL certificate so make sure you also follow the certbot instructions in the tutorial.
+
+Finally, before you deploy do remember to switch `debug=False` in your app.py file.
 
 ## Setting up the plugin
 
