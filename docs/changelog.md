@@ -6,6 +6,9 @@ This lists the changes in the various releases to the server and the plugin. For
 
 [:material-github: Github link](https://github.com/hankhank10/logseq-server)
 
+### 6 January 2023
+# 📝Improved demo video
+
 ### 5 January 2023
 - 💄Better image for test uploads to imgbb, fixing [this issue](https://github.com/hankhank10/loglink-server/issues/17)
 - 💄Fixes format of help message, fixing [this issue](https://github.com/hankhank10/loglink-server/issues/20)
@@ -24,11 +27,10 @@ This lists the changes in the various releases to the server and the plugin. For
 - None as yet
 
 ### v0.1.7 (6 January 2023) [:material-github:](https://github.com/hankhank10/loglink-plugin/releases/tag/v0.1.7)
-- 📝Update plugin description
-- 🔖Change release to no longer reflect pre-release
 - 🚀Add to Logseq plugin marketplace
+- 📝Update plugin description
+- 📦️Change release to no longer reflect pre-release
 - 📝Improved readme
-
 
 ### v0.1.5 (5 January 2023) [:material-github:](https://github.com/hankhank10/loglink-plugin/releases/tag/v0.1.5)
 
@@ -39,3 +41,4 @@ This lists the changes in the various releases to the server and the plugin. For
 ### v0.1.0 (4 January 2023) [:material-github:](https://github.com/hankhank10/loglink-plugin/releases/tag/v0.1.0)
 
 - 🚀Initial release, available only via Github download and requires manual unpack
+- 
