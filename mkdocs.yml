@@ -14,8 +14,10 @@ theme:
     - navigation.footer
 
 plugins:
-    - mkdocs-video
-    - search
+    - mkdocs-video:
+        css_style:
+            width: 400px
+            height: 400px
 
 markdown_extensions:
   - attr_list
