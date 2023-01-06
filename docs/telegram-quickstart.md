@@ -54,7 +54,7 @@ You can copy this token by pressing and holding on the message.
 
 ## Step 5: Download and configure the LogLink plugin
 
-[Download and configure the LogLink plugin](/plugin-settings)
+[Follow the instructions here to download and configure the LogLink plugin](/setup-plugin)
 
 ## Step 6: Send messages to the bot via Telegram
 

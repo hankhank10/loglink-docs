@@ -21,7 +21,12 @@ This lists the changes in the various releases to the server and the plugin. For
 [:material-github: Github link](https://github.com/hankhank10/logseq-plugin)
 
 ### Unreleased but committed to repo [:material-github:](https://github.com/hankhank10/loglink-plugin/)
+- None as yet
+
+### v0.1.6 (6 January 2023)
 - 📝Update plugin description
+- 🔖Change release to no longer reflect pre-release
+- 🚀Add to Logseq plugin marketplace
 
 ### v0.1.5 (5 January 2023) [:material-github:](https://github.com/hankhank10/loglink-plugin/releases/tag/v0.1.5)
 

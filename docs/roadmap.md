@@ -11,6 +11,10 @@
 - [ ] Signal
 - [ ] Email
 
+### User experience
+- [x] Plugin available to download from Github
+- [x] Plugin available to download from Logseq Marketplace
+
 ### Functionality
 
 - [x] Send text messages

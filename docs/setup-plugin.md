@@ -6,25 +6,11 @@
 
 While the plugin is in alpha, the plugin is not yet available from the marketplace.
 
-### Download from Github
+### Download from Logseq Marketplace
 
-During the alpha period, the plugin must be downloaded manually from [Github](https://github.com/hankhank10/loglink-plugin/).
+Go to the **Logseq Plugin Marketplace** in the desktop app and search for LogLink. Click on the plugin and then click the "Install" button.
 
-[Download latest version :fontawesome-brands-github:](https://github.com/hankhank10/loglink-plugin/archive/refs/heads/main.zip){ .md-button }
-
-Unpack the downloaded zip file into a directory of your choice (desktop is fine if you like).
-
-Open LogSeq and go to the settings menu:
-
-![](./img/client/logseq_settings_menu.png){ width=300 }
-
-Open **Logseq→Settings→Advanced**, and enable developer mode.
-
-Open **Logseq→Plugins**, choose :octicons-upload-16: **Load unpacked plugin**, and select the location where you unzipped the source code.
-
-You should now see the plugin in the list of plugins:
-
-![](./img/client/plugin_loaded.png){ width=600 }
+![Logseq Plugin Marketplace](./img/client/logseq_marketplace.png){ width=600}
 
 ## Configure the plugin
 
