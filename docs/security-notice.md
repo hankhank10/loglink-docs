@@ -26,9 +26,9 @@ If you are concerned about the security implications of using LogLink, you can m
 
 ## A *particularly* important note about images and video
 
-Plain text and locations are processed locally on the server, but to deal with images and videos we use (Imgur)[https://imgur.com/], a third party service.
+Plain text and locations are processed locally on the server, but to deal with images and videos we use [imgBB][https://imgbb.com/], a third party service.
 
-This means that images and videos you send to the server are uploaded ot Imgur which is publicly available.
+This means that images and videos you send to the server are uploaded to imgBB which may be publicly available.
 
 ## Data collected by LogLink
 
@@ -62,8 +62,8 @@ This request is received by the **LogLink Server**. At this point a `user` recor
 - `provider`: this identifies where the request came from (eg "whatsapp" or "telegram")
 
 - `provider_id`: this is the unique identifier provided by the provider (whatsapp or telegram) to identify the user who made the request. This is:
-  - For WhatsApp, the phone number of the user
-  - For Telegram, the chat_id
+    - For WhatsApp, the phone number of the user
+    - For Telegram, the chat_id
 
 - `approved`: this is a boolean value which is set to True by default. It is currently not in use, but might be used in the future to allow the service to blacklist users who are abusing the service.
 
@@ -100,8 +100,8 @@ For locations, the server parses the data received (eg latitude and longitude, a
 For images and video, more processing happens which you should understand:
 
 - The Server downloads the file from the Messaging Service, and saves it to a temporary location on the server
-- The Server uploads the file to Imgur
-- The Server receives the URL of the file on Imgur
+- The Server uploads the file to the cloud service
+- The Server receives the URL of the file on the cloud service
 - The Server stores the Imgur URL in its database
 - The Server deletes the file from the temporary location on the server
 
@@ -116,3 +116,9 @@ On receiving the request, the server checks the token and if it is valid, it ret
 
 The server then seeks to delete the delivered messages from the database.
 
+
+## Database storage
+
+The messages, until they are delivered, are stored in a database on the server. This database is currently not encrypted, meaning that anyone who has access to the server (either a maintainer of the service, or someone who gains access in an unauthorised way) would be able to read the messages.
+
+I do plan to encrypt the messages at rest in future, but this is not currently implemented.
