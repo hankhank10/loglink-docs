@@ -6,6 +6,10 @@ This lists the changes in the various releases to the server and the plugin. For
 
 [:material-github: Github link](https://github.com/hankhank10/logseq-server)
 
+### 7 January 2023
+- ✨Added functionality to check version number sent by plugin and display a warning if it is out of date - works with plugin v0.2.0
+- ✨Automatically checks latest plugin version available based on Github release tag
+
 ### 6 January 2023
 - 📝Improve demo video
 - 🐛Fixes issue around Telegram handler raising an error when it received an update that wasn't a message, fixing [this issue](https://github.com/hankhank10/loglink-server/issues/22)
@@ -26,6 +30,10 @@ This lists the changes in the various releases to the server and the plugin. For
 
 ### Unreleased but committed to repo [:material-github:](https://github.com/hankhank10/loglink-plugin/)
 - None as yet
+
+### v0.2.0 (7 January 2023) [:material-github:](https://github.com/hankhank10/loglink-plugin/releases/tag/v0.2.0)
+- ✨Now sends version number to server, so that the server can send a message to the user if it is out of date
+- ✨Adds option for user to opt out of sending version number to server
 
 ### v0.1.7 (6 January 2023) [:material-github:](https://github.com/hankhank10/loglink-plugin/releases/tag/v0.1.7)
 - 🚀Add to Logseq plugin marketplace
