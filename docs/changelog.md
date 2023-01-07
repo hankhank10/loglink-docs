@@ -10,6 +10,7 @@ This lists the changes in the various releases to the server and the plugin. For
 - ✨Added functionality to check version number sent by plugin and display a warning if it is out of date - works with plugin v0.2.0
 - ✨Automatically checks latest plugin version available based on Github release tag
 - ✨Checks for latest plugin version every hour
+- ♻️Refactored code structure to make it testable with pytest
 - ✅Added basic tests with pytest
 
 ### 6 January 2023
