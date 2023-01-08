@@ -6,6 +6,9 @@ This lists the changes in the various releases to the server and the plugin. For
 
 [:material-github: Github link](https://github.com/hankhank10/logseq-server)
 
+### 8 January 2023
+- 🐛Fixes an issue which caused the server to crash after refactoring the codebase
+
 ### 7 January 2023
 - ✨Added functionality to check version number sent by plugin and display a warning if it is out of date - works with plugin v0.2.0
 - ✨Automatically checks latest plugin version available based on Github release tag
