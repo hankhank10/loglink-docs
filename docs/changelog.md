@@ -6,6 +6,9 @@ This lists the changes in the various releases to the server and the plugin. For
 
 [:material-github: Github link](https://github.com/hankhank10/logseq-server)
 
+### 14 January 2023
+- 🗃️Added function to assist with database testing
+
 ### 8 January 2023
 - 🐛Fixes an issue which caused the server to crash after refactoring the codebase
 - 🙈Remove the `media_to_use` folder which, ironically, was not being used
