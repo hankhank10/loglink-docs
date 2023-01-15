@@ -6,6 +6,9 @@ This lists the changes in the various releases to the server and the plugin. For
 
 [:material-github: Github link](https://github.com/hankhank10/logseq-server)
 
+### 15 January 2023
+- ✅Added full workflow testing with pytest before commits
+
 ### 14 January 2023
 - 🗃️Added function to assist with database testing
 
