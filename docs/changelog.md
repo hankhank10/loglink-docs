@@ -6,39 +6,39 @@ This lists the changes in the various releases to the server and the plugin. For
 
 [:material-github: Github link](https://github.com/hankhank10/logseq-server)
 
-### 22 January 2023
-- 🐛Stops message being reported as an error in bugs
-- 🐛Fixes [this issue](https://github.com/hankhank10/loglink-server/issues/28) which meant when a user sent a document they were repeatedly told the message could not be delivered - thanks to [dwrhodes](https://github.com/dwrhodes) for reporting the bug
+#### 22 January 2023
+- 🐛 Stops message being reported as an error in bugs
+- 🐛 Fixes [this issue](https://github.com/hankhank10/loglink-server/issues/28) which meant when a user sent a document they were repeatedly told the message could not be delivered - thanks to [dwrhodes](https://github.com/dwrhodes) for reporting the bug
+- 📝 Prettified this changelog
 
-### 15 January 2023
-- ✅Added full workflow testing with pytest before commits
+#### 15 January 2023
+- ✅ Added full workflow testing with pytest before commits
 
-### 14 January 2023
-- 🗃️Added function to assist with database testing
+#### 14 January 2023
+- 🗃️ Added function to assist with database testing
 
-### 8 January 2023
-- 🐛Fixes an issue which caused the server to crash after refactoring the codebase
-- 🙈Remove the `media_to_use` folder which, ironically, was not being used
+#### 8 January 2023
+- 🐛 Fixes an issue which caused the server to crash after refactoring the codebase
+- 🙈 Remove the `media_to_use` folder which, ironically, was not being used
 
-### 7 January 2023
-- ✨Added functionality to check version number sent by plugin and display a warning if it is out of date - works with plugin v0.2.0
-- ✨Automatically checks latest plugin version available based on Github release tag
-- ✨Checks for latest plugin version every hour
-- ♻️Refactored code structure to make it testable with pytest
-- ✅Added basic tests with pytest
+#### 7 January 2023
+- ✨ Added functionality to check version number sent by plugin and display a warning if it is out of date - works with plugin v0.2.0
+- ✨ Automatically checks latest plugin version available based on Github release tag
+- ✨ Checks for latest plugin version every hour
+- ♻️ Refactored code structure to make it testable with pytest
+- ✅ Added basic tests with pytest
 
-### 6 January 2023
-- 📝Improve demo video
-- 🐛Fixes issue around Telegram handler raising an error when it received an update that wasn't a message, fixing [this issue](https://github.com/hankhank10/loglink-server/issues/22)
+#### 6 January 2023
+- 📝 Improve demo video
+- 🐛 Fixes issue around Telegram handler raising an error when it received an update that wasn't a message, fixing [this issue](https://github.com/hankhank10/loglink-server/issues/22)
 
-### 5 January 2023
-- 💄Better image for test uploads to imgbb, fixing [this issue](https://github.com/hankhank10/loglink-server/issues/17)
-- 💄Fixes format of help message, fixing [this issue](https://github.com/hankhank10/loglink-server/issues/20)
-- 💄Improved format of various user messages
+#### 5 January 2023
+- 💄 Better image for test uploads to imgbb, fixing [this issue](https://github.com/hankhank10/loglink-server/issues/17)
+- 💄 Fixes format of help message, fixing [this issue](https://github.com/hankhank10/loglink-server/issues/20)
+- 💄 Improved format of various user messages
 
-### 4 January 2023
-
-- 🚀Initial release for private alpha
+#### 4 January 2023
+- 🚀 Initial release for private alpha
 
 
 ## Plugin
@@ -49,22 +49,20 @@ This lists the changes in the various releases to the server and the plugin. For
 - None as yet
 
 ### v0.2.0 (7 January 2023) [:material-github:](https://github.com/hankhank10/loglink-plugin/releases/tag/v0.2.0)
-- ✨Now sends version number to server, so that the server can send a message to the user if it is out of date
-- ✨Adds option for user to opt out of sending version number to server
+- ✨ Now sends version number to server, so that the server can send a message to the user if it is out of date
+- ✨ Adds option for user to opt out of sending version number to server
 
 ### v0.1.7 (6 January 2023) [:material-github:](https://github.com/hankhank10/loglink-plugin/releases/tag/v0.1.7)
-- 🚀Add to Logseq plugin marketplace
-- 📝Update plugin description
-- 📦️Change release to no longer reflect pre-release
-- 📝Improved readme
+- 🚀 Add to Logseq plugin marketplace
+- 📝 Update plugin description
+- 📦️ Change release to no longer reflect pre-release
+- 📝 Improved readme
 
 ### v0.1.5 (5 January 2023) [:material-github:](https://github.com/hankhank10/loglink-plugin/releases/tag/v0.1.5)
-
-- 🔖Correct error in version number
-- 📝Update readme and updated demo
-- 👷Update workflows to produce build in preparation for submitting to marketplace
+- 🔖 Correct error in version number
+- 📝 Update readme and updated demo
+- 👷 Update workflows to produce build in preparation for submitting to marketplace
 
 ### v0.1.0 (4 January 2023) [:material-github:](https://github.com/hankhank10/loglink-plugin/releases/tag/v0.1.0)
+- 🚀 Initial release, available only via Github download and requires manual unpack
 
-- 🚀Initial release, available only via Github download and requires manual unpack
-- 
