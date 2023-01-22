@@ -7,7 +7,8 @@ This lists the changes in the various releases to the server and the plugin. For
 [:material-github: Github link](https://github.com/hankhank10/logseq-server)
 
 ### 22 January 2023
-- 🐛Fixed an issue which led to every message being reported as an error in bugs
+- 🐛Stops message being reported as an error in bugs
+- 🐛Fixes [this issue](https://github.com/hankhank10/loglink-server/issues/28) which meant when a user sent a document they were repeatedly told the message could not be delivered - thanks to [dwrhodes](https://github.com/dwrhodes) for reporting the bug
 
 ### 15 January 2023
 - ✅Added full workflow testing with pytest before commits
