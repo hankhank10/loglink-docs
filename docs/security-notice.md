@@ -26,7 +26,7 @@ If you are concerned about the security implications of using LogLink, you can m
 
 ## A *particularly* important note about images and video
 
-Plain text and locations are processed locally on the server, but to deal with images and videos we use (imgBB)[https://imgbb.com/], a third party service.
+Plain text and locations are processed locally on the server, but to deal with images and videos we use [imgBB](https://imgbb.com/), a third party service.
 
 This means that images and videos you send to the server are uploaded to imgBB which may be publicly available.
 
