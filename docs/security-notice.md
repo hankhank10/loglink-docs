@@ -22,11 +22,11 @@ It is really important that if you use LogLink you understand the security impli
 
 You can't absolutely. Any time you send your data to a third party cloud service it is inherently open to compromise.
 
-If you are concerned about the security implications of using LogLink, you can mitigate these risks by running your own version of the server, either under a virtual private server under your control or even locally. All of the code is available under open source and instructions for running it yourself are available [here[(self-hosting.md).
+If you are concerned about the security implications of using LogLink, you can mitigate these risks by running your own version of the server, either under a virtual private server under your control or even locally. All of the code is available under open source and instructions for running it yourself are available [here](self-hosting.md).
 
 ## A *particularly* important note about images and video
 
-Plain text and locations are processed locally on the server, but to deal with images and videos we use [imgBB][https://imgbb.com/], a third party service.
+Plain text and locations are processed locally on the server, but to deal with images and videos we use (imgBB)[https://imgbb.com/], a third party service.
 
 This means that images and videos you send to the server are uploaded to imgBB which may be publicly available.
 
