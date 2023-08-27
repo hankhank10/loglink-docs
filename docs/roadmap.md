@@ -1,6 +1,6 @@
 # Development status and roadmap
 
-## Current status (as of 4 January 2023)
+## Current status (as of 27 August 2023)
 
 ### Platforms supported
 
