@@ -6,6 +6,9 @@ This lists the changes in the various releases to the server and the plugin. For
 
 [:material-github: Github link](https://github.com/hankhank10/logseq-server)
 
+### 4 September 2023
+- ✅ Checks that LogLink works with [Beeper](https://www.beeper.com/) via Telegram - it does 🎉
+
 #### 27 August 2023
 - 🗃️ Various backend changes ahead of beta launch
 - 🥅 More robust error handling ahead of beta launch
