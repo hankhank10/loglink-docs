@@ -2,6 +2,10 @@
 
 ## Current status (as of 27 August 2023)
 
+### Editors supported
+- [x] Logseq
+- [ ] Obsidian
+
 ### Platforms supported
 
 - [x] Telegram
@@ -13,7 +17,8 @@
 
 ### User experience
 - [x] Plugin available to download from Github
-- [x] Plugin available to download from Logseq Marketplace
+- [x] Plugin available to download from Logseq marketplace
+- [ ] Plugin available to download from Obsidian marketplace
 
 ### Functionality
 
