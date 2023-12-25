@@ -72,7 +72,7 @@ It will download the message and insert it into your graph:
 
 ## Step 7: Set up imgBB to allow images
 
-If you want to send images to LogLink then you will need to [follow an additional step here](image-upload)
+If you want to send images to LogLink then you will need to [follow an additional step here](/image-upload)
 
 
 
