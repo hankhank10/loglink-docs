@@ -6,6 +6,10 @@ This lists the changes in the various releases to the server and the plugin. For
 
 [:material-github: Github link](https://github.com/hankhank10/logseq-server)
 
+### 24 December 2023
+- ✨ Added ability to produce dummy data for easier testing
+- ✨ Built functionality to support Obsidian plugin
+
 ### 22 December 2023
 - ✅ Built admin console
 - ✅ Built onboarding process to remove manual steps
