@@ -4,7 +4,7 @@
 
 ### Editors supported
 - [x] Logseq
-- [ ] Obsidian
+- [x] Obsidian
 
 ### Platforms supported
 

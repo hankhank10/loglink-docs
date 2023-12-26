@@ -1,6 +1,6 @@
 # Introduction to LogLink
 
-LogLink allows you to quickly and easily send text, images and locations from mobile apps (eg Telegram or WhatsApp) directly to your [Logseq](https://logseq.com/) graph.
+LogLink allows you to quickly and easily send text, images and locations from mobile apps (eg Telegram or WhatsApp) directly to your [Logseq](https://logseq.com/) or [Obsidian](https://obsidian.md] graph.
 
 ## Demo
 
@@ -13,12 +13,13 @@ LogLink currently supports:
 - :simple-telegram: Telegram (beta)
 
 Future plans:
-
-- :simple-whatsapp: Whatsapp (under development)
 - :material-email: Email
 - :simple-signal: Signal
 
-See our full [roadmap](/roadmap) for more details.
+Shelved plans:
+- :simple-whatsapp: Whatsapp (no longer under development)
+
+See the full [roadmap](/roadmap) for more details.
 
 ## Getting started
 

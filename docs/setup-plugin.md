@@ -2,10 +2,6 @@
 
 ## Download methods
 
-### Via the LogSeq marketplace
-
-While the plugin is in alpha, the plugin is not yet available from the marketplace.
-
 ### Download from Logseq Marketplace
 
 Go to the **Logseq Plugin Marketplace** in the desktop app and search for LogLink. Click on the plugin and then click the "Install" button.

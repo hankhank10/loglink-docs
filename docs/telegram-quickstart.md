@@ -52,7 +52,7 @@ You can copy this token by pressing and holding on the message.
 
 ![](./img/telegram/get_token.png){ width=300 }
 
-## Step 5: Download and configure the LogLink plugin
+## Step 5: Download and configure the LogLink or Obsidian plugin
 
 [Follow the instructions here to download and configure the LogLink plugin](/setup-plugin)
 
