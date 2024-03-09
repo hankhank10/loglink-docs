@@ -103,7 +103,6 @@ You will be asked to create a name for the bot, which must end with "_bot".
 The Botfather account will send you a token which you should enter here:
 
 ```py
-# Telegram credentials
 TELEGRAM_BOT_NAME="the_name_you_chose_for_your_bot"
 TELEGRAM_TOKEN="174329548:BBFjJaaBBG7EgCzABBgdfyGBYwX"
 ```
@@ -156,7 +155,7 @@ Set debugging mode for the server to on by changing the bottom of `app.py` to:
 ```py
 # Run the app
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5010, debug=True)
+    app.run(host='0.0.0.0', port=5011, debug=True)
 ```
 
 Run the server in test mode with:
