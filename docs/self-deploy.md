@@ -48,31 +48,18 @@ Open the `loglink-server` directory and use pip to install the required packages
 pip3 install -r requirements.txt
 ```
 
-### Set up your secrets
+### Set up your .env file
 
 Your server will rely on various "secrets" in order to communicate securely with both itself and the various services that it will use. The secrets used for this server are not committed to the git repo (since then they wouldn't be secret!) so you will need to create your own.
 
-There are two relevant files containing secrets:
-
-- `secretstuff.py` which contains all the credentials
-- `whitelist.py` which contains a list of whitelisted phone numbers for the WhatsApp integration to use
-
-The repo includes two template files which you can use to set up these files. You can create copies of the templates with the right names by using:
-
-```bash
-cp secretstuff_template.py secretstuff.py
-cp whitelist_template.py whitelist.py
-```
-
-We can ignore `whitelist.py` for now and focus on `secretstuff.py`.
+The secrets should be stored in a file called `.env` in the root of the server directory. There is a file in the repo called `.envtemplate` which outlines the required variables. Rename this to `.env` and populate the fields with your own secrets.
 
 #### Database (required)
 
 The first thing we need to do is set up a secret key to secure our database. This can be anything you like but should be a long random string:
 
 ```py
-# Database security
-app_secret_key = 'alongr575243an45001domstring2that4nobodywouldguess3v3r'
+APP_SECRET_KEY='alongr575243an45001domstring2that4nobodywouldguess3v3r'
 ```
 
 #### Sentry credentials (optional)
@@ -80,20 +67,27 @@ app_secret_key = 'alongr575243an45001domstring2that4nobodywouldguess3v3r'
 Sentry is a handy tool for finding errors in production. It is free to sign up for and if you do want to use it them you should insert the "dsn" for your Sentry project in the below:
 
 ```py
-# Sentry
-sentry_dsn = "https://4j8hfj009fe449977ee8j6e6@o.ingest.sentry.io/0395819423400"
+SENTRY_DSN="https://4j8hfj009fe449977ee8j6e6@o.ingest.sentry.io/0395819423409380200"
 ```
 
 Sentry  it's also optional for this repo. If you don't want to use sentry then you can leave the field here as `None` and Sentry will be disabled.
 
-#### Imgur credentials (required)
+### Admin credentials (required)
 
-You should sign up for an Imgur API account here. You will be given a `client_id` and a `client_secret` which you should enter here:
+There is an admin dashboard made available at `/admin` which you can use to manage your server. You should set up a username and password for this dashboard by entering the following into your `.env` file:
 
 ```py
-# Imgur credentials
-imgur_client_id = 'd847f920f938dsf7'
-imgur_client_secret = '44j385afd738flkaldoie98982019dfff827s'
+ADMIN_USERNAME='admin'
+ADMIN_PASSWORD='alongpasswordn0bodyknows'
+```
+
+If you want to send automated onboarding emails to new users (optional) you will also need to set SMTP details:
+
+```py
+EMAIL_SETTING_HOST="smtp.yourdomain.com"
+EMAIL_SETTING_PORT=587
+EMAIL_SETTING_USERNAME="username"
+EMAIL_SETTING_PASSWORD="password"
 ```
 
 #### Telegram credentials (required)
@@ -110,15 +104,14 @@ The Botfather account will send you a token which you should enter here:
 
 ```py
 # Telegram credentials
-telegram_bot_name = "the_name_you_chose_for_your_bot"
-telegram_token = "174329548:BBFjJaaBBG7EgCzABBgdfyGBYwX"
-telegram_full_token = "bot"+telegram_token  # you can leave this alone
+TELEGRAM_BOT_NAME="the_name_you_chose_for_your_bot"
+TELEGRAM_TOKEN="174329548:BBFjJaaBBG7EgCzABBgdfyGBYwX"
 ```
 
 You should also choose a secret token of your own choice which Telegram will send to you when it sends you a message. This is to ensure that messages to your webhook are actually from Telegram:
 
 ```py
-telegram_webhook_auth = "asecretpasswordthatonlyyouknow"
+TELEGRAM_WEBHOOK_AUTH="asecretpasswordthatonlyyouknow"
 ```
 
 You now need to tell the bot the location of the webhook that it should send messages to. You do this by sending a HTTP POST request (using Postman or [HTTPie](https://httpie.io/app)) with the following terms:
@@ -142,16 +135,6 @@ You should get a 200 response like this:
     "result": true,
     "description": "Webhook was set"
 }
-```
-
-#### WhatsApp credentials (optional)
-
-Setting up WhatsApp is quite complicated an is not recommended unless you are experienced with the WhatsApp API. If you do want to use it then you should populate your WhatsApp API credentials into the `secretstuff.py` file.
-
-If you don't intend to use WhatsApp then you can disable it by setting the following line in `app.py`:
-
-```py
-use_whatsapp = False
 ```
 
 ### Set up the database
