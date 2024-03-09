@@ -72,7 +72,7 @@ SENTRY_DSN="https://4j8hfj009fe449977ee8j6e6@o.ingest.sentry.io/0395819423409380
 
 Sentry  it's also optional for this repo. If you don't want to use sentry then you can leave the field here as `None` and Sentry will be disabled.
 
-### Admin credentials (required)
+#### Admin credentials (required)
 
 There is an admin dashboard made available at `/admin` which you can use to manage your server. You should set up a username and password for this dashboard by entering the following into your `.env` file:
 
