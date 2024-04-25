@@ -22,7 +22,7 @@ It is really important that if you use LogLink you understand the security impli
 
 You can't absolutely. Any time you send your data to a third party cloud service it is inherently open to compromise.
 
-If you are concerned about the security implications of using LogLink, you can mitigate these risks by running your own version of the server, either under a virtual private server under your control or even locally. All of the code is available under open source and instructions for running it yourself are available [here](self-hosting.md).
+If you are concerned about the security implications of using LogLink, you can mitigate these risks by running your own version of the server, either under a virtual private server under your control or even locally. All of the code is available under open source and instructions for running it yourself are available [here](self-deploy.md).
 
 ## A *particularly* important note about images and video
 
