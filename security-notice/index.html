@@ -1,0 +1,808 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../telegram-quickstart/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.0">
+    
+    
+      
+        <title>An important security notice - LogLink documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.f79797b0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#an-important-security-notice" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="LogLink documentation" class="md-header__button md-logo" aria-label="LogLink documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LogLink documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              An important security notice
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/hankhank10/loglink-server" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="LogLink documentation" class="md-nav__button md-logo" aria-label="LogLink documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    LogLink documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/hankhank10/loglink-server" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Introduction to LogLink
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          An important security notice
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        An important security notice
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-mitigate-these-risks" class="md-nav__link">
+    How can I mitigate these risks?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-particularly-important-note-about-images-and-video" class="md-nav__link">
+    A particularly important note about images and video
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-collected-by-loglink" class="md-nav__link">
+    Data collected by LogLink
+  </a>
+  
+    <nav class="md-nav" aria-label="Data collected by LogLink">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overall-workflow" class="md-nav__link">
+    Overall workflow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-1-request-a-token" class="md-nav__link">
+    Step 1: Request a token
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-send-data-to-the-server" class="md-nav__link">
+    Step 2: Send data to the server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-process-the-data" class="md-nav__link">
+    Step 3: Process the data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-delivering-the-data-to-the-client" class="md-nav__link">
+    Step 4: Delivering the data to the client
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-storage" class="md-nav__link">
+    Database storage
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Quickstart Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Quickstart Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Quickstart Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../telegram-quickstart/" class="md-nav__link">
+        Telegram Quickstart
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup-plugin/" class="md-nav__link">
+        Download and configure plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-upload/" class="md-nav__link">
+        Enabling image uploads
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Self Deployment Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Self Deployment Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Self Deployment Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technologies-used/" class="md-nav__link">
+        Tech stack intro
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../self-deploy/" class="md-nav__link">
+        Self deployment
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Development
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Development" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Development
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technologies-used/" class="md-nav__link">
+        How to contribute
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        Development roadmap
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        Changelogs
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-mitigate-these-risks" class="md-nav__link">
+    How can I mitigate these risks?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-particularly-important-note-about-images-and-video" class="md-nav__link">
+    A particularly important note about images and video
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-collected-by-loglink" class="md-nav__link">
+    Data collected by LogLink
+  </a>
+  
+    <nav class="md-nav" aria-label="Data collected by LogLink">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overall-workflow" class="md-nav__link">
+    Overall workflow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-1-request-a-token" class="md-nav__link">
+    Step 1: Request a token
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-send-data-to-the-server" class="md-nav__link">
+    Step 2: Send data to the server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-process-the-data" class="md-nav__link">
+    Step 3: Process the data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-delivering-the-data-to-the-client" class="md-nav__link">
+    Step 4: Delivering the data to the client
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-storage" class="md-nav__link">
+    Database storage
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+
+<h1 id="an-important-security-notice">An important security notice</h1>
+<p>An important premise of LogSeq is that it is privacy-first and can be run entirely in offline mode, meaning you keep control of your data.</p>
+<p>Sending data to your graph from mobile apps is a great way to quickly capture ideas and thoughts, but it also means that your data is being sent via multiple third-party services, including Telegram and WhatsApp, but also including LogLink itself.</p>
+<p>For images and video, the file is also sent to imgbb which may publicly available.</p>
+<p>While LogLink does not seek to collect any more data on you than is necessary (and seeks to be transparent about this by publishing its source code), using a third party services does come with inherent risks.</p>
+<p>It is really important that if you use LogLink you understand the security implications of this, and that you are comfortable with the risks.</p>
+<div class="admonition danger">
+<p class="admonition-title">By using LogLink you are acknowledging that:</p>
+<ul>
+<li>This is a community project</li>
+<li>It comes with absolutely no warranty as to performance or security</li>
+<li>If your messages are not delivered or are compromised, LogLink is not responsible</li>
+<li>By using LogLink you are releasing the authors and maintainers of LogLink from any liability for loss, damage, inconvenience or unhappiness if your data is lost or compromised</li>
+</ul>
+</div>
+<h2 id="how-can-i-mitigate-these-risks">How can I mitigate these risks?</h2>
+<p>You can't absolutely. Any time you send your data to a third party cloud service it is inherently open to compromise.</p>
+<p>If you are concerned about the security implications of using LogLink, you can mitigate these risks by running your own version of the server, either under a virtual private server under your control or even locally. All of the code is available under open source and instructions for running it yourself are available <a href="../self-deploy/">here</a>.</p>
+<h2 id="a-particularly-important-note-about-images-and-video">A <em>particularly</em> important note about images and video</h2>
+<p>Plain text and locations are processed locally on the server, but to deal with images and videos we use <a href="https://imgbb.com/">imgBB</a>, a third party service.</p>
+<p>This means that images and videos you send to the server are uploaded to imgBB which may be publicly available.</p>
+<h2 id="data-collected-by-loglink">Data collected by LogLink</h2>
+<p>LogLink makes real efforts to collect as little data as possible about you, and store as little as possible. Below is the description of the data collected at each stage of the workflow.</p>
+<div class="admonition danger">
+<p class="admonition-title">The below is not a guarantee</p>
+<p>Software can change, be compromised or not work as intended. The below is intended as a best efforts description of how the service is intended to function, but is not a guarantee that additional data may not be collected either through error or compromise.</p>
+</div>
+<h3 id="overall-workflow">Overall workflow</h3>
+<p>To understand what data is potentially collected, it is useful to understand the overall workflow of LogLink and the various parts that comprise it:</p>
+<ul>
+<li>
+<p>A <strong>Messaging Service</strong> such as Telegram or Whatsapp.</p>
+</li>
+<li>
+<p><strong>LogLink Server</strong> is a simple web server running in the cloud, which receives data sent to it by Telegram and WhatsApp, stores it in a database under a unique token, and then delivers when that token is requested.</p>
+</li>
+<li>
+<p><strong>LogLink Plugin</strong> is a simple plugin for LogLink which requests data from the server and populates it to your LogSeq graph.</p>
+</li>
+</ul>
+<h3 id="step-1-request-a-token">Step 1: Request a token</h3>
+<p>The user signs up to LogLink by sending a message to the LogLink bot on Telegram or WhatsApp.</p>
+<p>This request is received by the <strong>LogLink Server</strong>. At this point a <code>user</code> record is created in the database on the server, containing the following records:</p>
+<ul>
+<li>
+<p><code>id</code>: this is a unique integer identifier for the record, which is used to identify the record in the database internally</p>
+</li>
+<li>
+<p><code>token</code>: this is a long string of numbers and letters generated randomly at the time of the request</p>
+</li>
+<li>
+<p><code>provider</code>: this identifies where the request came from (eg "whatsapp" or "telegram")</p>
+</li>
+<li>
+<p><code>provider_id</code>: this is the unique identifier provided by the provider (whatsapp or telegram) to identify the user who made the request. This is:</p>
+<ul>
+<li>For WhatsApp, the phone number of the user</li>
+<li>For Telegram, the chat_id</li>
+</ul>
+</li>
+<li>
+<p><code>approved</code>: this is a boolean value which is set to True by default. It is currently not in use, but might be used in the future to allow the service to blacklist users who are abusing the service.</p>
+</li>
+<li>
+<p><code>api_call_count</code>: starts at 0, and is incremented each time a request is made to the API for this token. This is not used at present, but might be in future to identify users who are abusing the service.</p>
+</li>
+</ul>
+<p>The server then sends a message back to the user, containing the token.</p>
+<h3 id="step-2-send-data-to-the-server">Step 2: Send data to the server</h3>
+<p>Subsequent messages sent to the LogLink bot are received by the <strong>LogLink Server</strong>. At this point the server checks which <code>provider</code> this was received from and the <code>provider_id</code> to identify which user the message came from.</p>
+<p>Assuming the <code>provider_id</code> matches a user in the database, then it creates a new <code>message</code> record in the database, containing the following records:</p>
+<ul>
+<li><code>id</code>: this is a unique integer identifier for the record, which is used to identify the record in the database internally. It does not relate to the user's <code>id</code></li>
+<li><code>provider</code>: this identifies where the request came from (eg "whatsapp" or "telegram")</li>
+<li><code>provider_id</code>: this is the unique identifier provided by the provider (whatsapp or telegram) to identify the user who made the request - details as per the user record</li>
+<li><code>provider_message_id</code>: this is the unique identifier provided by the provider (whatsapp or telegram) to identify the message. This is used for purposes such as marking the message as "read" when it is delivered to the user.</li>
+<li><code>contents</code>: the contents of the message</li>
+<li><code>timestamp</code>: the time the message was received by the server</li>
+<li><code>delivered</code>: a boolean value which is set to False by default. It is set to True when the message is delivered to the user. In reality this field doesn't do much as, in its default configuration, the server will only deliver messages to the user once, and then delete them from the database. However it has been included in the database so that it can be used in future to allow the server to deliver messages multiple times, or to allow the user to request messages be delivered again.</li>
+</ul>
+<p>Note that some Messaging Services (eg WhatsApp) provide additional information to the server (eg the name you have stored on the service, your avatar). LogLink doesn't need this data, so it doesn't seek to save it, but you should be aware that it is <em>available</em> to the server and in a situation where the server you are using is compromised, this data could be accessed.</p>
+<h3 id="step-3-process-the-data">Step 3: Process the data</h3>
+<p>For some types of data received, there is some processing that takes place on the server side before the contents is saved to the database.</p>
+<p>For plain text, no processing takes place.</p>
+<p>For locations, the server parses the data received (eg latitude and longitude, address) to display this in a user-friendly way. All of this happens locally on the server.</p>
+<p>For images and video, more processing happens which you should understand:</p>
+<ul>
+<li>The Server downloads the file from the Messaging Service, and saves it to a temporary location on the server</li>
+<li>The Server uploads the file to the cloud service</li>
+<li>The Server receives the URL of the file on the cloud service</li>
+<li>The Server stores the Imgur URL in its database</li>
+<li>The Server deletes the file from the temporary location on the server</li>
+</ul>
+<h3 id="step-4-delivering-the-data-to-the-client">Step 4: Delivering the data to the client</h3>
+<p>The <strong>LogLink Server</strong> makes available an API which the <strong>LogLink Plugin</strong> can use to request data from the server.</p>
+<p>When the plugin requests data from the server, it sends a request to the server, containing the token provided by the user.</p>
+<p>On receiving the request, the server checks the token and if it is valid, it returns all of the messages stored in the database for the user associated with that token.</p>
+<p>The server then seeks to delete the delivered messages from the database.</p>
+<h2 id="database-storage">Database storage</h2>
+<p>The messages, until they are delivered, are stored in a database on the server. This database is currently not encrypted, meaning that anyone who has access to the server (either a maintainer of the service, or someone who gains access in an unauthorised way) would be able to read the messages.</p>
+<p>I do plan to encrypt the messages at rest in future, but this is not currently implemented.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "content.code.copy"], "search": "../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5cf534bf.min.js"></script>
+      
+    
+  </body>
+</html>
