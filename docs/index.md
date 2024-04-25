@@ -13,10 +13,13 @@ LogLink currently supports:
 - :simple-telegram: Telegram (beta)
 
 Future plans:
+
 - :material-email: Email
+
 - :simple-signal: Signal
 
 Shelved plans:
+
 - :simple-whatsapp: Whatsapp (no longer under development)
 
 See the full [roadmap](/roadmap) for more details.
