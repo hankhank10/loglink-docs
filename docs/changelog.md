@@ -6,6 +6,9 @@ This lists the changes in the various releases to the server and the plugin. For
 
 [:material-github: Github link](https://github.com/hankhank10/logseq-server)
 
+### 25 April 2024
+- 🧪 Left beta
+
 ### 26 December 2023
 - ✨ Released beta of Obsidian plugin
 
